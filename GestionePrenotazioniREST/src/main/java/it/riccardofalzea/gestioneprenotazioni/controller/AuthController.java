@@ -50,7 +50,7 @@ public class AuthController {
     @Autowired
     PasswordEncoder encoder;
     
-   String stringa;
+   
 
     @PostMapping(value="/login", consumes=MediaType.APPLICATION_JSON_VALUE, produces=MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> authenticateUser(@RequestBody LoginRequest loginRequest) {
